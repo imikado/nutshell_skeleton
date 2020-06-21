@@ -15,4 +15,7 @@ class Dependencies extends \Nutshell\Abstracts\Dependencies implements \My\Inter
         return new \Nutshell\Sgbd\Pdo('maBase', $config['maBaseMysql.dsn'], $config['maBaseMysql.username'], $config['maBaseMysql.password'], $options);
     }
 
+    public function getLogger(){
+        return new \My\Tools\Logger();
+    }
 }
